@@ -94,7 +94,8 @@ class CouchDBLogHandler(logging.StreamHandler):
     """
 
     def __init__(self, host='localhost', port=5984, database='logs',
-        create_database=False, username=None, password=None, ssl=False, request_args=None):
+                 create_database=False, username=None, password=None,
+                 ssl=False, request_args=None):
         """
             Initialize the couchdb handler
 
@@ -205,5 +206,4 @@ class CouchDBLogHandler(logging.StreamHandler):
         """
         headers = {'Content-type': 'application/json'}
         self.session.post(self.db_url, data=self.format(record),
-            headers=headers
-        )
+                          headers=headers)

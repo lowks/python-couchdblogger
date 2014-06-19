@@ -23,7 +23,7 @@ setup(
     maintainer_email='rinat.sabitov@gmail.com, federicogonzalez761@gmail.com',
     url="https://github.com/histrio/python-couchdblogger",
     package_dir={'': 'src'},
-    packages=[".",],
+    packages=[".", ],
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
@@ -41,5 +41,5 @@ setup(
     long_description=read('README'),
     test_suite='test',
     tests_require=['mock',
-		   'nose'],
+                   'nose'],
 )
